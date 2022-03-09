@@ -1,0 +1,16 @@
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+}
+
+.frames {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 200px;
+}
