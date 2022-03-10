@@ -1,16 +1,45 @@
+body {
+  background-color: #EEE;
+  color: #222;
+  font-family: American Typewriter, FreeMono, monospace;
+}
+
 #container {
   display: flex;
   flex-direction: row;
+  flex: auto;
+  flex-wrap: wrap;
 }
 
 #main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+#resultado {
+  width: 200px;
+  border: 1px solid #FFF;
+  border-radius: 0px;
+  box-shadow: -1px -1px 0px #444;
+  background-color: #DDD;
+}
+
+button {
+  background-color: white;
+  border: 1px solid #222;
+  border-radius: 3px;
+  box-shadow: 1px 1px 0px #222;
+  margin: 1px;
+  /*font-family: cursive;*/
+  font-family: monospace;
 }
 
 .frames {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
-  width: 200px;
+  border: 1px solid steelblue;
+  border-radius: 4px;
+  padding: 4px;
+  width: 300px;
+  margin: 8px;
+  box-shadow: 4px 4px 4px lightsteelblue;
 }
