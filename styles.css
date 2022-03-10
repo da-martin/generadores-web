@@ -1,9 +1,16 @@
+:root {
+  --accent-color: 70, 130, 180;  
+}
+
 body {
   background-color: #EEE;
   color: #222;
   font-family: American Typewriter, FreeMono, monospace;
 }
 
+h1 {
+  text-shadow: 2px 2px 2px rgb(var(--accent-color),0.7); 
+}
 #container {
   display: flex;
   flex-direction: row;
@@ -36,10 +43,18 @@ button {
 }
 
 .frames {
-  border: 1px solid steelblue;
+  border: 1px solid rgb(var(--accent-color));
   border-radius: 4px;
   padding: 4px;
   width: 300px;
   margin: 8px;
-  box-shadow: 4px 4px 4px lightsteelblue;
+  box-shadow: 4px 4px 4px rgb(var(--accent-color),0.3);
+}
+
+.box-focused {
+  background-color: #EEE;
+}
+
+.box-unfocused {
+  background-color: #DDD;
 }
