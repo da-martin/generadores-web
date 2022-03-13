@@ -21,25 +21,6 @@ h1 {
   text-align: center;
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 205px;
-  background-color: black;
-  color: #fff;
-  font-size: small;
-  text-align: center;
-  padding: 4px 1px;
-  border-radius: 6px;
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-  margin-left: -132px;
-  margin-top: 80px;
-}
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
 #container {
   display: flex;
   flex-direction: row;
