@@ -1,19 +1,45 @@
-:root {
-  --accent-color: 70, 130, 180;  
-}
+/*
+document.documentElement.style .setProperty('--my-variable-name', 'pink');
+or
+element.style.setProperty("--my-var", jsVar + 4);
+*/
+
 
 /*  transition: all .07s ease; Combine with pseudo-classes? */
 
 body {
-  background-color: #DDD;
+  --accent-color: 200, 60%, 30%; 
+  background-color: #CCC;
+  /*background: linear-gradient(165deg, #CCC, #444);*/
   color: #222;
   font-family: "American Typewriter", FreeMono, monospace;
 }
 
 h1 {
-  text-shadow: 2px 2px 2px rgb(var(--accent-color),0.7); 
+  text-shadow: 2px 2px 2px hsla(var(--accent-color), 0.7); 
   margin-left: 8px;
+  text-align: right;
 }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 205px;
+  background-color: black;
+  color: #fff;
+  font-size: small;
+  text-align: center;
+  padding: 4px 1px;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  margin-left: -132px;
+  margin-top: 80px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 #container {
   display: flex;
   flex-direction: row;
@@ -28,11 +54,20 @@ h1 {
 }
 
 #results {
+  font-weight: bold;
   width: 200px;
-  border: 1px solid #FFF;
+  height: 100px;
+  border-right:  1px solid #FFF; 
+  border-bottom: 1px solid #FFF;
+  border-left: 1px solid #444;
+  border-top: 1px solid #444;
   border-radius: 0px;
-  box-shadow: -1px -1px 0px #444;
+  /*box-shadow: -1px -1px 0px #444;*/
   background-color: #CCC;
+  padding: 4px;
+  border-radius: 3px;
+  text-align: center;
+  margin: 1px;
 }
 
 button {
@@ -45,19 +80,23 @@ button {
   /*font-family: monospace;*/
 }
 
+.labels {
+  font-weight: bold;
+}
+
 .frames {
-  border: 1px solid rgb(var(--accent-color));
+  background-color: #DDD;
+  border: 2px solid hsla(var(--accent-color), 1);
   border-radius: 4px;
   padding: 4px;
   width: 300px;
   margin: 8px;
-  box-shadow: 4px 4px 4px rgb(var(--accent-color),0.3);
+  box-shadow: 4px 4px 4px hsla(var(--accent-color), 0.4);
 }
 
-/* Use the JS method element.classList.toggle('.box-focused');*/
-.box-focused {
+.frames:focus-within {
   background-color: #EEE;
-  box-shadow: 4px 4px 4px rgb(var(--accent-color),0.6);
+  box-shadow: 4px 4px 4px hsla(var(--accent-color), 0.8);
 }
 
 
