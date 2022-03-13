@@ -18,7 +18,7 @@ body {
 h1 {
   text-shadow: 2px 2px 2px hsla(var(--accent-color), 0.7); 
   margin-left: 8px;
-  text-align: right;
+  text-align: center;
 }
 
 .tooltip .tooltiptext {
@@ -89,7 +89,7 @@ button {
   border: 2px solid hsla(var(--accent-color), 1);
   border-radius: 4px;
   padding: 4px;
-  width: 300px;
+  width: 225px;
   margin: 8px;
   box-shadow: 4px 4px 4px hsla(var(--accent-color), 0.4);
 }
