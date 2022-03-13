@@ -82,3 +82,13 @@ btnDescription.addEventListener("click", function() {
   const txtResults = document.querySelector('#results');
   txtResults.textContent = rollOnTable(DESCRIPTION);
 });
+
+
+
+
+const selectColors = document.querySelector('#colors');
+selectColors.addEventListener("change", function() {
+    console.log(this.value);
+    const body = document.querySelector('body');
+    body.style.setProperty("--accent-color", this.value + ", 60%, 30%");
+});

@@ -21,6 +21,14 @@ h1 {
   text-align: center;
 }
 
+#colors {
+  background-color: #DDD;
+  border: 1px solid #222;
+  border-radius: 3px;
+  box-shadow: 1px 1px 0px #222;
+  padding: 1px 1px 1px 8px;
+}
+
 #container {
   display: flex;
   flex-direction: row;
@@ -70,7 +78,7 @@ button {
   border: 2px solid hsla(var(--accent-color), 1);
   border-radius: 4px;
   padding: 4px;
-  width: 225px;
+  width: 300px;
   margin: 8px;
   box-shadow: 4px 4px 4px hsla(var(--accent-color), 0.4);
 }
