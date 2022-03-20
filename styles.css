@@ -18,9 +18,11 @@ body {
 h1 {
   text-shadow: 2px 2px 2px hsla(var(--accent-color), 0.7); 
   margin-left: 8px;
-  text-align: center;
+  text-align: left;
 }
-
+#selectColor {
+  margin-left: 8px;
+}
 #colors {
   background-color: #DDD;
   border: 1px solid #222;
@@ -86,6 +88,7 @@ button {
 .frames:focus-within {
   background-color: #EEE;
   box-shadow: 4px 4px 4px hsla(var(--accent-color), 0.8);
+  transition: all .2s ease;
 }
 
 

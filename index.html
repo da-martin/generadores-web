@@ -10,14 +10,15 @@
 </head>
 <body>
   <h1>Generadores de ideas para historias</h1>
-  Select accent color: 
-  <select name="colors" id="colors">
-    <option value="200" selected>Blue</option>
-    <option value="275">Purple</option>
-    <option value="40">Yellow</option>
-    <option value="0">Red</option>
-    <option value="100">Green</option>
-  </select>
+  <p id="selectColor"> Select accent color: 
+    <select name="colors" id="colors">
+      <option value="200" selected>Blue</option>
+      <option value="275">Purple</option>
+      <option value="40">Yellow</option>
+      <option value="0">Red</option>
+      <option value="100">Green</option>
+    </select>
+  </p>
   <div id="container">
     <div id="main" class="frames">
       <div>Sí/No:</div>
@@ -32,11 +33,9 @@
       <div>Resultado: </div>
       <div id="results"></div>
     </div>
-    <div id="character" class="frames">
-      <div>Personaje: </div>
-    </div>
-    <div id="story" class="frames">
-      <div>Historia: </div>
+    <div id="detailed" class="frames">
+      <button id="character">Personaje</button>
+      <button id="story">Historia</button>
     </div>
   </div>
 </body>
